@@ -1,6 +1,6 @@
-//¡Ayuda al elfo a listar los regalos!
+/* ¡Ayuda al elfo a listar los regalos!
 
-/* Te ha llegado una carta con todos los regalos que debes preparar. 
+Te ha llegado una carta con todos los regalos que debes preparar. 
 
 El tema es que es una cadena de texto y es muy difícil de leer 😱.
 
@@ -12,10 +12,11 @@ Transforma el texto a un objeto que contenga el nombre de cada regalo y las vece
 
 const carta = 'bici  coche balón _playstation bici coche  peluche'
 
+//------------------------------------------------------------------------------------------------------------------------------
+/* Ejemplo */
+
 let regalosFinales = {};
 let listaRegalos = carta.split(' ');
-
-
 
 listaRegalos.filter((item)=> item !== "" && !item.includes('_')).forEach((numero) => {
   if (!regalosFinales[numero]) {
@@ -26,7 +27,8 @@ listaRegalos.filter((item)=> item !== "" && !item.includes('_')).forEach((numero
 
 console.log(regalosFinales);
 
-//-----------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------------
+/* Ejemplo */
 
 function listGifts(letter) {
     const obj ={}

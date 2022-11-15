@@ -15,6 +15,9 @@ let ovejas = [
     {name: "george", color: "blanca"},
 ];
 
+//------------------------------------------------------------------------------------------------------------------------------
+/* Ejemplo */
+
   function filtrarPorColorOveja(ovejas) {
     if ('color' in ovejas && ovejas.color === 'rojo' && ovejas.name === name.includes('a') != -1 && ovejas.name === name.includes('n') != -1 ){
       return true;
@@ -26,6 +29,7 @@ let ovejas = [
 var arrPorColor = ovejas.filter(filtrarPorColorOveja);
 
 //------------------------------------------------------------------------------------------------------------------------------
+/* Ejemplo */
 
 console.log('Array Filtrado\n', arrPorColor);
   

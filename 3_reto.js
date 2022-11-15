@@ -13,7 +13,7 @@ Para saber si una carta es válida ✅, debes comprobar que los paréntesis cier
 "bici coche (balón bici coche" // -> ❌
 "peluche (bici [coche) bici coche balón" // -> ❌
 "(peluche {) bici" // -> ❌
-"() bici" // ❌ */
+"() bici" // ❌ 
 
 //----------------------- true 
 // /\(\w+\)/gmiu  : (asasas)
@@ -26,6 +26,10 @@ Para saber si una carta es válida ✅, debes comprobar que los paréntesis cier
 // /\(\w+/giu : (asasasa
 
 // []{}
+*/
+
+//------------------------------------------------------------------------------------------------------------------------------
+/* Ejemplo */
 
 const carta = "bici coche (balon) bici coche peluche"
 
